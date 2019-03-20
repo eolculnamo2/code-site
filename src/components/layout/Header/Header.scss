@@ -1,0 +1,32 @@
+@import '../../../scss/settings';
+
+.Header__main-wrap {
+  background: $primary;
+  color: $primaryFont;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.Header__links-wrap {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  li {
+    cursor: pointer;
+    margin-right: 2em;
+    font-size: 1.25em;
+
+    &:hover {
+      color: $primaryHover;
+    }
+  }
+}
+
+.Header__title {
+  margin: 0;
+}
