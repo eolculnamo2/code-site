@@ -1,0 +1,10 @@
+@import '../../../scss/settings.scss';
+
+.Footer__wrap {
+  background: $primary;
+  color: $primaryFont;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

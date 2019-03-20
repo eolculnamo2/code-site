@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import FeaturedTutorial from './subcomponents/FeaturedTutorial';
+import FeaturedArticle from './subcomponents/FeaturedArticle';
 import HomeHero from '../../../../assets/home-hero.png';
 import './Home.scss';
 
 const Home = (props) => {
   const { featuredArticles, featuredTutorials } = props;
-    return (
+  return (
     <>
       <div className="Home__hero-wrap">
         <img
@@ -17,13 +18,14 @@ const Home = (props) => {
         />
         <h1 className="Home__hero-text">JavaScript === Life</h1>
       </div>
-      <div className="Home__featured-wrap">
+      <div className="Global__page-width Home__featured-wrap">
         <div>
-          <h2>Featured Tutorials</h2>
-          {featuredTutorials.map(x => <FeaturedTutorial data={x} key={x.test} />)}
+          <h2 className="Home__featured-heading">Featured Tutorials</h2>
+          {featuredTutorials.map(x => <FeaturedTutorial data={x} key={x.name} />)}
         </div>
         <div>
-          <h2>Featured Articles</h2>
+          <h2 className="Home__featured-heading">Featured Articles</h2>
+          {featuredArticles.map(x => <FeaturedArticle data={x} key={x.test} />)}
         </div>
       </div>
     </>
@@ -36,8 +38,8 @@ Home.defaultProps = {
 };
 
 Home.propTypes = {
-  featuredArticles: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])),
-  featuredTutorials: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])),
+  featuredArticles: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
+  featuredTutorials: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
 };
 
 

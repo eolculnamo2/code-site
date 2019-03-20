@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FeaturedArticle = (props) => {
-  const { test } = props;
+  const { data } = props;
   return (
     <div>
-      {test}
+      { data.name }
     </div>
   );
 };
 
 FeaturedArticle.defaultProps = {
-  test: '',
+  data: { name: '', description: '' },
 };
 
 FeaturedArticle.propTypes = {
-  test: PropTypes.string,
+  data: PropTypes.shape({ name: '', description: '' }),
 };
 
 export default FeaturedArticle;

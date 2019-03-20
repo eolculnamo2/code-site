@@ -4,18 +4,19 @@ import PropTypes from 'prop-types';
 const FeaturedTutorial = (props) => {
   const { data } = props;
   return (
-    <div>
-      { data }
+    <div className="Home__featured-tut-wrap">
+      <h3 className="Global__no-m Home__featured-tut-name">{data.name}</h3>
+      <p className="Global__no-m">{data.description}</p>
     </div>
   );
 };
 
 FeaturedTutorial.defaultProps = {
-  data: '',
+  data: { name: '', description: '' },
 };
 
 FeaturedTutorial.propTypes = {
-  data: PropTypes.string,
+  data: PropTypes.shape({ name: '', description: '' }),
 };
 
 export default FeaturedTutorial;
