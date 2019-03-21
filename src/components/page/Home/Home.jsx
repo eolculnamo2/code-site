@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import FeaturedTutorial from './subcomponents/FeaturedTutorial';
 import FeaturedArticle from './subcomponents/FeaturedArticle';
-import HomeHero from '../../../../assets/home-hero.png';
+import HomeHero from '../../../../dist/assets/home-hero.png';
 import './Home.scss';
 
 const Home = (props) => {
@@ -25,7 +25,7 @@ const Home = (props) => {
         </div>
         <div>
           <h2 className="Home__featured-heading">Featured Articles</h2>
-          {featuredArticles.map(x => <FeaturedArticle data={x} key={x.test} />)}
+          {featuredArticles.map(x => <FeaturedArticle data={x} key={x.name} />)}
         </div>
       </div>
     </>

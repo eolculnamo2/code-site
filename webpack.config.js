@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    path: path.resolve('build/'),
+    path: path.resolve('dist/build/'),
     publicPath: '/',
     filename: 'bundle.js',
   },
