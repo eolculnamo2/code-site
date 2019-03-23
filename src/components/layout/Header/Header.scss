@@ -3,12 +3,19 @@
 .Header__main-wrap {
   background: $primary;
   color: $primaryFont;
+  padding: 2em;
+  box-sizing: border-box;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0 3px 3px rgba(0,0,0,.7);
+}
+
+.Header__inner-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
-  box-sizing: border-box;
 }
+
 
 .Header__links-wrap {
   list-style-type: none;

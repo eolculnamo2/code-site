@@ -1,0 +1,52 @@
+@import '../../../scss/settings';
+@import '../../../scss/global';
+
+
+.Articles__heading {
+  margin: 0;
+  
+  color: $primary;
+  font-size: 2.25rem;
+  font-weight: 550;
+}
+
+.Articles__heading-wrap {
+  padding: 1rem 4.625rem;
+  background-color: $primaryLightBg;
+}
+
+.Articles__body-wrap {
+  padding: 1rem;
+}
+
+.Articles__category-heading {
+  font-size: 1.85rem;
+  font-weight: 500;
+}
+
+.Articles__featured-box {
+  border: 1px solid #333;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Articles__featured-content {
+  max-width: 600px;
+}
+
+.Articles__featured-heading {
+  font-size: 1.8rem;
+  margin: 0;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+    padding: 0 .5rem;
+    background: $primaryLightBg;
+  }
+}

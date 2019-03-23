@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.scss';
+import Articles from './components/page/Articles/Articles';
+import Footer from './components/layout/Footer/Footer';
 import Header from './components/layout/Header/Header';
 import Home from './components/page/Home/Home';
-import Footer from './components/layout/Footer/Footer';
+
 
 class App extends Component {
   constructor() {
@@ -14,11 +16,12 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header />
         <BrowserRouter>
+          <Header />
           <Route exact path="/" component={Home} />
+          <Route exact path="/articles" component={Articles} />
+          <Footer />
         </BrowserRouter>
-        <Footer />
       </>
     );
   }
