@@ -23,7 +23,11 @@ FeaturedArticle.defaultProps = {
 };
 
 FeaturedArticle.propTypes = {
-  data: PropTypes.shape({ name: '', description: '', image: '' }),
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    image: PropTypes.string,
+  }),
 };
 
 export default FeaturedArticle;

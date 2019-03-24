@@ -11,7 +11,7 @@
 }
 
 .Articles__heading-wrap {
-  padding: 1rem 4.625rem;
+  padding: 2rem 4.625rem;
   background-color: $primaryLightBg;
 }
 
@@ -19,9 +19,26 @@
   padding: 1rem;
 }
 
+.Articles__horizontal-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
 .Articles__category-heading {
-  font-size: 1.85rem;
+  font-size: 2.25rem;
   font-weight: 500;
+  margin-top: .5em;
+  border-bottom: 4px solid $primary;
+}
+
+.Articles__cat-icon {
+  border-bottom: 4px solid $primary;;
+  padding-bottom: .5em;
+  width: 55px;
+  margin-right: .5em;
+  margin-bottom: 1em;
 }
 
 .Articles__featured-box {
@@ -38,7 +55,7 @@
 }
 
 .Articles__featured-heading {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 0;
   text-decoration: underline;
   font-weight: 500;

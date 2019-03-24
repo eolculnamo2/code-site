@@ -16,7 +16,10 @@ FeaturedTutorial.defaultProps = {
 };
 
 FeaturedTutorial.propTypes = {
-  data: PropTypes.shape({ name: '', description: '' }),
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+  }),
 };
 
 export default FeaturedTutorial;

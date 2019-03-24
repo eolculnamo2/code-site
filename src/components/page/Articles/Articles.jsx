@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import FeaturedArticle from './subcomponents/FeaturedArticle';
+import awardImg from '../../../../dist/assets/award.png';
 import './Articles.scss';
 
 const Articles = (props) => {
@@ -11,17 +13,15 @@ const Articles = (props) => {
         <h1 className="Global__page-width Articles__heading">Articles</h1>
       </div>
       <div className="Global__page-width Articles__body-wrap">
-        <h2 className="Articles__category-heading">Featured</h2>
-        {featuredArticles.map(x => (
-          <div className="Articles__featured-box" key={x.name}>
-            <div className="Articles__featured-content">
-              <h3 className="Articles__featured-heading">{x.name}</h3>
-              <p>{x.description}</p>
-            </div>
-            <img src={x.image} alt={x.name} />
-          </div>
-        ))}
-        
+        <div className="Articles__horizontal-center">
+          <img
+            alt="featured"
+            className="Articles__cat-icon"
+            src={awardImg}
+          />
+          <h2 className="Articles__category-heading">Featured Articles</h2>
+        </div>
+        {featuredArticles.map(x => <FeaturedArticle data={x} key={x.name} />)}
       </div>
     </>
   );
