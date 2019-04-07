@@ -1,0 +1,110 @@
+@import '../../../scss/settings.scss';
+
+.articles-page-main-wrap {
+  font-family: $font1;
+  padding: 2em;
+}
+
+.article-list-item {
+ // color: $medium-blue;
+  cursor: pointer;
+  @media (min-width: 1000px) {
+      width: 49%;
+      display: inline-block;
+  }
+
+  &:hover {
+      //color: $dark-blue;
+      text-decoration: underline;
+  }
+}
+
+.article-outer {
+  background: #dadada;
+  margin: 0; padding: 0;
+}
+
+.article-main-wrap {
+  font-family: $font1;
+  margin: 0 2em;
+  background: white;
+  padding: 1em;
+  min-height: 100vh;
+
+  @media (min-width: 1000px) {
+      margin: 0 10em;
+      padding: 1em 4em;
+  }
+
+  a {
+      color: $faded-red;
+      cursor: pointer;
+      &:hover {
+          text-decoration: underline;
+      }
+  }
+  
+  h2, h3 {
+      color: $primary;
+  }
+
+  iframe {
+      width: 100%;
+      height: 500px;
+  }
+}
+
+.article-code-block {
+  background-color: $code-bg;
+  padding: .3em 2em;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1.5;
+  letter-spacing: .8px;
+  .indent-1 {
+      margin-left: 2em;
+  }
+  .indent-2 {
+      margin-left: 4em;
+  }
+  .indent-3 {
+      margin-left: 6em;
+  }
+  .indent-4 {
+      margin-left: 8em;
+  }
+}
+
+.article-title-wrap {
+ //border-bottom: 1px solid $light-blue;
+}
+.article-vue {
+  width: 50%;
+  margin: auto;
+  display: block;
+
+  @media (min-width: 600px) {
+      width: 20%;
+  }
+}
+
+.article-block {
+  display: block;
+}
+
+.article-scalable {
+  width: 90%;
+  margin: auto;
+  display: block;
+  border: 2px solid #dadada;
+  border-radius: 3px;
+
+  @media (min-width: 600px) {
+      width: 60%;
+  }
+}
+
+.article-not-found {
+  text-align: center;
+  margin: 5em;
+}

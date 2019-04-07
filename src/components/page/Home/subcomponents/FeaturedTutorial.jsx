@@ -5,7 +5,9 @@ const FeaturedTutorial = (props) => {
   const { data } = props;
   return (
     <div className="Home__featured-tut-wrap">
-      <h3 className="Global__no-m Home__featured-tut-name">{data.name}</h3>
+      <a href={data.link}>
+        <h3 className="Global__no-m Home__featured-tut-name">{data.name}</h3>
+      </a>
       <p className="Global__no-m">{data.description}</p>
     </div>
   );

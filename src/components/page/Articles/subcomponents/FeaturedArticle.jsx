@@ -7,10 +7,12 @@ const FeaturedArticle = (props) => {
   return (
     <div className="Articles__featured-box" key={data.name}>
       <div className="Articles__featured-content">
-        <h3 className="Articles__featured-heading">{data.name}</h3>
+        <h3 className="Articles__featured-heading">
+          <a href={data.link}>{data.name}</a>
+        </h3>
         <p>{data.description}</p>
       </div>
-      <img src={data.image} alt={data.name} />
+      <img className="Articles__featured-img" src={data.image} alt={data.name} />
     </div>
   );
 };

@@ -46,9 +46,10 @@
 
 .Home__featured-tut-wrap {
   padding: 1em;
-  border: 1px solid #555;
+  border: 1px solid $dark4;
   box-sizing: border-box;
   margin: 1em;
+  background-color: $white-light;
 
   @media(min-width:$bp-tablet) {
     margin-right: 2em;
@@ -77,6 +78,8 @@
   padding: 1em;
   border: 1px solid #555;
   margin: 1em;
+  background-color: $white-light;
+  border: 1px solid $dark4;
 
   @media(min-width:$bp-tablet) {
     max-width: 550px;

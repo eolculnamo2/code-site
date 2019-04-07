@@ -24,6 +24,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
+  background-color: $white-light;
+  border: 1px solid $dark4;
+  margin-bottom: 2em;
+
 }
 
 .Articles__category-heading {
@@ -42,14 +46,15 @@
 }
 
 .Articles__featured-box {
-  border: 1px solid #333;
+  border: 1px solid $dark4;
   padding: 1em;
   margin-bottom: 1em;
-  box-shadow: 0 2px 5px rgba(0,0,0,.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $white-light;
 }
+
 .Articles__featured-content {
   max-width: 600px;
 }
@@ -66,4 +71,8 @@
     padding: 0 .5rem;
     background: $primaryLightBg;
   }
+}
+
+.Articles__featured-img {
+  max-width: 150px;
 }
